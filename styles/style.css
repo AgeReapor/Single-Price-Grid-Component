@@ -1,6 +1,7 @@
 :root {
     --cyan: hsl(179, 62%, 43%);
     --bright-yellow: hsl(71, 73%, 54%);
+    --brighter-yellow: hsl(66, 86%, 57%);
     --light-gray: hsl(204, 43%, 93%);
     --grayish-blue: hsl(218, 22%, 67%);
 
@@ -24,9 +25,15 @@ body {
     justify-content: center;
     background-color: white;
     width: 70%;
-    margin:auto;
-    margin-top: 100px;
+    max-width: 640px;
     border-radius: 10px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+
+
     
     overflow:hidden;
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.1);
@@ -62,6 +69,7 @@ body {
     p {
         margin: 5px 0 30px 0;
     }
+
 }
 
 .cost {
@@ -78,7 +86,7 @@ body {
 
 #btn {
     width: 100%;
-    height: 3em;
+    height: 3rem;
     background-color: var(--bright-yellow);
     border: none;
     border-radius: 5px;
@@ -88,6 +96,18 @@ body {
     font: var(--font);
     font-weight: var(--font-weight-bold);
     text-align: center;
+    transition: all .2s ease-in;
+}
+
+
+#btn:hover{
+    background-color: var(--brighter-yellow);
+    cursor: pointer;
+    color: var(--cyan);
+    font-size: 1.1em;
+
+    box-shadow: 5px 5px 20px 5px hsla(71, 73%, 54%, 0.2);
+    transition: all .1s ease-in;
 }
 
 .features {
@@ -95,17 +115,41 @@ body {
 
     ul {
         list-style: none;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    a {
+        list-style: none;
         margin: 0;
         padding: 0;
         font-size: .9em;
         font-weight: 300;
         line-height: 1.5em;
+        color: var(--light-gray);
+        text-decoration: none;
+        
+        transition: all .3s ease-out;
     }
+
+
 }
 
+
+.link:hover {
+    text-decoration: underline;
+    padding-left: 8px;
+    font-weight: 700;
+    color: var(--bright-yellow );
+    transition: all .3s ease-out;
+}
+
+
 @media only screen and (max-width: 800px) {
+    
     .container{
-        margin-top: 50px;
+        margin-top: 150px;
     }
 
     .bottom{
@@ -117,4 +161,6 @@ body {
     .subscription, .features {
         flex: 100%;
     }
-  }
+}
+
+
