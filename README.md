@@ -25,12 +25,10 @@ Users should be able to:
 
 ![screenshot](./images/Frontend-Mentor-Single-Price-Grid-Component.png)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AgeReapor/Single-Price-Grid-Component)
-- Live Site URL: [Add live site URL here](https://single-price-grid-component-three-chi.vercel.app/)
+- Solution URL: [Github](https://github.com/AgeReapor/Single-Price-Grid-Component)
+- Live Site URL: [Vercel](https://single-price-grid-component-three-chi.vercel.app/)
 
 ## My process
 
