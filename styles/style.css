@@ -96,7 +96,7 @@ body {
     font: var(--font);
     font-weight: var(--font-weight-bold);
     text-align: center;
-    transition: all .2s ease-in;
+    transition: all .3s ease-in;
 }
 
 
@@ -105,7 +105,7 @@ body {
     cursor: pointer;
     color: var(--cyan);
     font-size: 1.1em;
-
+    scale: 1.01;
     box-shadow: 5px 5px 20px 5px hsla(71, 73%, 54%, 0.2);
     transition: all .1s ease-in;
 }
